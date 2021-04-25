@@ -1,0 +1,40 @@
+.LoadingDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;    
+}
+.WalkingMan {
+    min-width: 100px;
+    width: 40%;
+    animation-name: Slide;
+    animation-duration: 4s;
+}
+
+.text {
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Slide {
+    from {
+        padding-right: 100%;
+    }
+    to {
+        padding-right: 0%;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
