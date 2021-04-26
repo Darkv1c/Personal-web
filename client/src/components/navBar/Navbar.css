@@ -1,0 +1,62 @@
+@import '../../auxiliar/consts.css';
+.Navbar {
+  min-height: 80px;
+  background-color: black;
+  display: flex;
+  clip-path: circle(150px at 0px -20px);
+}
+.Navbar:hover {
+  min-height: 100vh;
+  clip-path: circle(400px at 70px 50px);
+  color: white;
+  text-shadow: chartreuse;
+}
+.Navbar:hover .Logo {
+  margin-top: 35px;
+  height: 150px;
+}
+.Logo {
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.Options {
+  margin-top: 90px;
+  font-size: xx-large;
+}
+#O1 {
+  margin-left: 50px;
+  transform: rotate(10deg);
+}
+#O1:hover {
+  color: var(--green);
+  text-decoration-line: underline;
+  cursor: url(../../assets/pointer2.png), pointer;
+}
+#O2 {
+  margin-left: 30px;
+  transform: rotate(20deg);
+}
+#O2:hover {
+  color: var(--green);
+  text-decoration-line: underline;
+  cursor: url(../../assets/pointer2.png), pointer;
+}
+#O3 {
+  margin-left: -10px;
+  transform: rotate(30deg);
+}
+#O3:hover {
+  color: var(--green);
+  text-decoration-line: underline;
+  cursor: url(../../assets/pointer2.png), pointer;
+}
+#O4 {
+  margin-left: -60px;
+  transform: rotate(40deg);
+}
+#O4:hover {
+  color: var(--green);
+  text-decoration-line: underline;
+  cursor: url(../../assets/pointer2.png), pointer;
+}

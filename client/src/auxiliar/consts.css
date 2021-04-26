@@ -1,0 +1,7 @@
+:root{
+    /*colors*/
+    --green: rgb(142, 216, 146);
+    --violet: rgb(147, 41, 161);
+    /*time*/
+    --animation-duration: 1.5s;
+}
