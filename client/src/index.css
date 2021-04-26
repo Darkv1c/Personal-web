@@ -1,4 +1,26 @@
-body {
-    background-image: url(./assets/Bg.png);
-    overflow: hidden;
+@import './auxiliar/consts.css';
+
+body {    
+    background-image: url(./assets/Bg.png);    
+    cursor: url(./assets/cursor.png), pointer;    
+    margin: 0%;
 }
+
+.App {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--green);
+  }
