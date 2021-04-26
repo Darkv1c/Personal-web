@@ -7,19 +7,31 @@
     cursor: url(../../assets/pointer2.png), pointer;
 }
 
+.transitionWH(){
+    transition: width 1s, height 1s; 
+}
+
 .Navbar {
-    min-height: 80px;
+    position: fixed;
+    height: 150px;
+    width: 150px;
     background-color: black;
     display: flex;
-    clip-path: circle(150px at 0px -20px);
+    border-radius: 0% 0% 100%;
+    .transitionWH();
     &:hover {
-        min-height: 100vh;
-        clip-path: circle(400px at 70px 50px);
-        color: white;
+        height: 500px;
+        width: 500px;
         text-shadow: chartreuse;
         .Logo{
         margin-top: 35px;
         height: 150px;
+        }
+        .Options {
+            display: flex;
+            flex-direction: column;
+            font-size: xx-large;
+            color: white;
         }
     }
 }
@@ -28,11 +40,15 @@
     height: 60px;    
     margin-left: 20px;
     margin-top: 20px;
+    transition: width 1s, height 1s;
 }
 
 .Options {
     margin-top: 90px;
-    font-size: xx-large;
+    font-size: 0px;
+    transition: font-size 0.5s;
+    transition-delay: 0.3s;
+    color: transparent;
 }
 
 #O1 {
