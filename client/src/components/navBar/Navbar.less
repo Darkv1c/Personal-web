@@ -8,21 +8,34 @@
 }
 
 .transitionWH(){
-    transition: width 1s, height 1s; 
+    transition: max-width 0.7s, width 0.7s, height 0.7s; 
 }
 
 .Navbar {
     position: fixed;
     height: 150px;
     width: 150px;
+    max-width: 150px;
     background-color: black;
     display: flex;
     border-radius: 0% 0% 100%;
+    box-shadow: 2px 2px 2px 2px rgb(189, 241, 137);
+    animation-name: twinkleLightOff;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
     .transitionWH();
     &:hover {
         height: 500px;
         width: 500px;
+        max-width: 500px;
         text-shadow: chartreuse;
+        animation-name: twinkleLightOn;
+        animation-duration: 0.2s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-delay: 0.7s;
         .Logo{
         margin-top: 35px;
         height: 150px;
@@ -33,6 +46,24 @@
             font-size: xx-large;
             color: white;
         }
+    }
+}
+
+@keyframes twinkleLightOn {
+    from {
+        box-shadow: 2px 2px 2px 2px rgb(89, 114, 64);        
+    }
+    to {
+        box-shadow: 2px 2px 2px 2px rgb(189, 241, 137);
+    }
+}
+
+@keyframes twinkleLightOff {
+    from {
+        box-shadow: 2px 2px 2px 2px rgb(189, 241, 137);
+    }
+    to {
+        box-shadow: 2px 2px 2px 2px rgb(89, 114, 64);        
     }
 }
 

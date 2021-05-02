@@ -12,7 +12,7 @@ const Loading = () => {
     return (
         <div style={{display: display}} onClick={()=> history.push("/home")} className="LoadingDiv">
             <img className="WalkingMan" alt="walking man" src={LoadinPage}/>
-            <h1 className="text" style={{color: "white"}}>Loading...</h1>
+            <h1 className="text">Loading...</h1>
         </div>
     )
 }

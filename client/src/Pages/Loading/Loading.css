@@ -21,6 +21,8 @@
     opacity: 0;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    -webkit-text-stroke: 0.3px chartreuse ;
+    color: transparent;
 }
 
 @keyframes Slide {
@@ -35,7 +37,7 @@
 }
 @keyframes appear {
     from {
-        opacity: 0;
+        -webkit-text-stroke: 0.3px chartreuse ;
     }
     to {
         opacity: 1;
