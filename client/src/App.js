@@ -1,9 +1,8 @@
 import React from 'react';
-import {LoadingPage} from './Pages';
+import {LoadingPage, AboutMe, Home} from './Pages';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import './transitions.css';
-import Home from './Pages/Home/Home';
 
 const App = () => {
 
@@ -12,8 +11,9 @@ const App = () => {
           <CSSTransition key={location.key} classNames="slide" 
           onExiting={()=> window.scrollTo(0,0)} timeout={1000}>
             <Switch location={location}>
-              <Route path="/home"><Home/></Route>  
-              <Route path="/"><LoadingPage/></Route>             
+              <Route exact path="/"><LoadingPage/></Route>
+              <Route path="/home"><Home/></Route>             
+              <Route path="/AboutMe"><AboutMe/></Route>  
             </Switch>
           </CSSTransition>
         </TransitionGroup>
