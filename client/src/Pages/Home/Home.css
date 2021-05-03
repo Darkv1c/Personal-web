@@ -1,3 +1,25 @@
-.HomeDiv{
-    min-height: 100vh;
+.Content {
+  display: flex;
+}
+.Content p {
+  min-width: 200px;
+}
+.Content img {
+  width: 200px;
+  vertical-align: text-top;
+  margin-right: 20px;
+}
+.Content ul {
+  max-width: 80%;
+}
+.Content ul li {
+  margin-right: 40px;
+}
+@media screen and (max-width: 700px) {
+  .Content {
+    flex-direction: column;
+  }
+  .Content img {
+    align-self: center;
+  }
 }

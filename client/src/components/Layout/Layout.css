@@ -1,0 +1,70 @@
+.HomeDiv {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  font-size: x-large;
+}
+.LeftDiv {
+  padding: 4% 10%;
+  box-sizing: border-box;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(100% 100%, 0 0, 0 100%);
+  animation-name: fromLeftTop;
+  animation-duration: 1s;
+}
+@keyframes fromLeftTop {
+  from {
+    max-width: 100%;
+    margin-left: -100vw;
+    margin-top: -100vh;
+  }
+  to {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+}
+.RightDiv {
+  padding: 4% 10%;
+  box-sizing: border-box;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  animation-name: fromRightBottom;
+  animation-duration: 1s;
+}
+@keyframes fromRightBottom {
+  from {
+    margin-left: 100vw;
+    margin-top: 100vh;
+  }
+  to {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+}
+@keyframes fromRightBottomOut {
+  from {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  to {
+    margin-left: 100vw;
+    margin-top: 100vh;
+  }
+}
+.BlackAndWhite {
+  background: black;
+  color: whitesmoke;
+}
+.WhiteAndBlack {
+  background: whitesmoke;
+  color: black;
+}

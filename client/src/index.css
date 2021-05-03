@@ -2,13 +2,14 @@
 
 body {    
     background-image: url(./assets/Bg.png);    
-    cursor: url(./assets/cursor.png), pointer;    
+    cursor: url(./assets/cursors/cursor.png), default;    
     margin: 0%;
-}
-
-.App {
-    min-height: 100vh;
     overflow-x: hidden;
+  }
+  
+  .App {
+    max-height: 100vh;
+    min-height: 100vh;
 }
 
 ::-webkit-scrollbar {
