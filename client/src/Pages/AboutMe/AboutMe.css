@@ -22,5 +22,6 @@
   }
   .Content img {
     align-self: center;
+    margin-bottom: 10px;
   }
 }
