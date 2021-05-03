@@ -1,3 +1,3 @@
-# Pesonal-web
+# Personal-web
 
 Pagina web dónde estaré subiendo mis proyectos personales
