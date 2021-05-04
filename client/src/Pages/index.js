@@ -1,3 +1,5 @@
 export {default as LoadingPage} from './Loading/Loading.jsx'
 export {default as AboutMe} from './AboutMe/AboutMe.jsx'
 export {default as Home} from './Home/Home.jsx'
+export {default as Projects} from './Projects/Projects.jsx'
+export {default as Tutorials} from './Tutorials/Tutorials.jsx'
