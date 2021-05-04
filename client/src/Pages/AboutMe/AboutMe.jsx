@@ -13,7 +13,7 @@ const AboutMe = () => {
                     {
                         `Hola, mi nombre es Víctor Orellano y soy desarrollador web fullstack, 
                         me apasiona y me divierte resolver los retos a los que nos enfrentamos los programadores
-                        a la hora de crear nuestras aplicaciones y el hecho de sentir que puede hacerce casi 
+                        a la hora de crear nuestras aplicaciones y el hecho de sentir que puede hacerse casi 
                         cualquier cosa con código. Intento siempre encontrar la mejor manera de enfrentar los problemas
                         y estoy en constante aprendizaje para tener a mi disposición cada vez mas herramientas,
                         hago siempre lo mejor posible pero sobre todo disfruto lo que hago.`
