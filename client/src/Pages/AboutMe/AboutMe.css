@@ -1,5 +1,24 @@
+@font-face {
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pangolin/v6/cY9GfjGcW0FPpi-tWMfN79k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sriracha';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sriracha/v5/0nkrC9D4IuYBgWcI9NbfTwQ.ttf) format('truetype');
+}
 .Content {
   display: flex;
+  font-family: Source Sans Pro;
 }
 .Content p {
   min-width: 200px;
@@ -24,4 +43,7 @@
     align-self: center;
     margin-bottom: 10px;
   }
+}
+h1 {
+  font-family: Sriracha;
 }
