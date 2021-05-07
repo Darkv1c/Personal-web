@@ -1,0 +1,21 @@
+.Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2%;
+  box-sizing: border-box;
+}
+.Container .InfoContainer {
+  display: grid;
+  grid-template-rows: 50vh 50vh;
+  grid-row-gap: 2%;
+}
+.Container .InfoContainer img {
+  max-height: 100%;
+}
+.Container .Arrow {
+  font-size: 20rem;
+  text-align: center;
+}
+.Container .Arrow :hover {
+  cursor: url(../../assets/cursors/pointer.png), pointer;
+}

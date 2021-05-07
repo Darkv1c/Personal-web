@@ -4,8 +4,10 @@
   display: flex;
   font-size: x-large;
 }
+.padding {
+  padding: 4vh 10vw;
+}
 .LeftDiv {
-  padding: 4% 10%;
   box-sizing: border-box;
   position: absolute;
   min-width: 100%;
@@ -29,7 +31,6 @@
   }
 }
 .RightDiv {
-  padding: 4% 10%;
   box-sizing: border-box;
   position: absolute;
   min-width: 100%;
